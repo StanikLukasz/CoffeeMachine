@@ -53,7 +53,6 @@ public class Main {
         //Making another 2 coffees (the limit is 4)
         System.out.println("\nBEGIN OF MAKING 2 COFFEES");
         machine.receiveCoffee();
-        machine.insertCoin();
         machine.pushButton();
         machine.receiveCoffee();
         machine.insertCoin();
@@ -61,11 +60,15 @@ public class Main {
         machine.receiveCoffee();
         System.out.println("END OF MAKING 2 COFFEES\n");
 
-        //Inserting a coin
+        //Trying to get back a non-existing coin
         System.out.print("14) ");
+        machine.getBackCoin();
+
+        //Inserting a coin
+        System.out.print("15) ");
         machine.insertCoin();
         //Pushing button - the limit of coffees has been already reached
-        System.out.print("15) ");
+        System.out.print("16) ");
         machine.pushButton();
 
     }

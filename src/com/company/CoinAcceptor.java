@@ -23,8 +23,13 @@ public class CoinAcceptor {
     }
 
     public void getBackCoin(){
-        coinInserted=false;
-        System.out.println("Coin returned");
+        if (coinInserted) {
+            coinInserted = false;
+            System.out.println("Coin returned");
+        }
+        else {
+            System.out.println("ERROR - There is no coin to be returned");
+        }
     }
 
     public void storeCoin(){
