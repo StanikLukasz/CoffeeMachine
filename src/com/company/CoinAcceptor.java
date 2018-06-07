@@ -13,8 +13,13 @@ public class CoinAcceptor {
     }
 
     public void insertCoin(){
-        coinInserted=true;
-        System.out.println("Coin inserted");
+       if(coinInserted){
+           System.out.println("There ie already a coin in the machine!");
+       }
+       else {
+           coinInserted = true;
+           System.out.println("Coin inserted");
+       }
     }
 
     public void getBackCoin(){
